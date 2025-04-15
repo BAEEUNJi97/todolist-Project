@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 
 import TodoItemDetail from '@/components/ui/TodoItemDetail';
-import Button from '@/components/ui/Button';
 import Gnb from "@/components/ui/Gnb";
 
 // 할 일 항목 데이터 타입 정의

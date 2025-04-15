@@ -1,8 +1,7 @@
 'use client'; // 클라이언트 컴포넌트임을 명시
 
 import { IToDo } from '@/types/todo';
-import Button from '@/components/ui/Button';
-import ImageUploader from '@/components/ui/ImageUploader';
+import Button from '@/components/ui/Button'; // ✅ 실제로 사용되고 있음
 import { useState } from 'react';
 import { COLORS } from '@/styles/colors';
 
@@ -16,13 +15,13 @@ interface TodoItemDetailProps {
 
 // 할 일 상세보기 컴포넌트
 export default function TodoItemDetail({ todo, onUpdate, onDelete, onToggle }: TodoItemDetailProps) {
+    // ✅ 존재하지 않으면 notFound 처리하거나 null 반환
     if (!todo) return null;
 
-    // 메모, 완료상태, 이미지 URL 상태 관리
+    // ✅ Hook은 조건문 바깥에서 항상 호출되어야 함
     const [memo, setMemo] = useState(todo.memo || '');
     const [isCompleted, setIsCompleted] = useState(todo.isCompleted);
     const [imageUrl, setImageUrl] = useState(todo.imageUrl || '');
-
 
     // 수정 완료 버튼 클릭 시 호출
     const handleSave = () => {
@@ -32,7 +31,6 @@ export default function TodoItemDetail({ todo, onUpdate, onDelete, onToggle }: T
             imageUrl,
         });
     };
-
 
     // 이미지 업로드 처리
     const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {

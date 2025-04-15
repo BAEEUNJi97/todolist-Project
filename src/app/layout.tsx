@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";// Google 폰트 import
 import "./globals.css"; // 전역 스타일 import
-import { ReactNode } from 'react'
 
 // Google 폰트 설정 (Geist Sans)
 const geistSans = Geist({
