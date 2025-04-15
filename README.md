@@ -35,7 +35,10 @@ Next.js, TypeScript, Tailwind CSS를 기반으로 제작한 할 일 관리 웹 �
 
 ##  프로젝트 화면
 
-> 
+ ![Image](https://github.com/user-attachments/assets/9e648bb7-70ed-4d64-b0b1-e8dfdb1f5dd8)
+![Image](https://github.com/user-attachments/assets/c17d980a-09eb-46df-a799-36ebe0d5a85a)
+![Image](https://github.com/user-attachments/assets/a2000be5-9dbc-40b3-8656-d2e23cfa9d70)
+![Image](https://github.com/user-attachments/assets/6b182dc7-58a4-47c1-b78e-34d20b1f37d9)
 
 - 메인 목록 페이지
 - 상세 페이지 (메모 & 이미지 업로드)
