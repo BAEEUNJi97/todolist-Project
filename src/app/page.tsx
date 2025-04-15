@@ -115,7 +115,7 @@ export default function Page() {
                 <form
                     onSubmit={handleSubmit(onSubmit)}
                     className="flex items-center gap-3 rounded-[24px] border-2 mb-6 mt-4 px-4 py-2 shadow-none"
-                    style={{ borderColor: COLORS.slate[300], backgroundColor: COLORS.white }}
+                    style={{ borderColor: COLORS.slate[700], backgroundColor: COLORS.white }}
                 >
                     <Input
                         {...register('todo')}
