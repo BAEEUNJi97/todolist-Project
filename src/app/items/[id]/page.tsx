@@ -88,6 +88,7 @@ export default function TodoDetailPage() {
             if (res.ok) {
                 const updatedTodo = await res.json();
                 setTodo(updatedTodo); // 수정된 내용 반영
+                alert('수정이 완료되었습니다.');
             }
         } catch (err) {
             console.error('메모 업데이트 실패:', err);
