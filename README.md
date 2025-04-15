@@ -7,6 +7,11 @@ Next.js, TypeScript, Tailwind CSS를 기반으로 제작한 할 일 관리 웹 �
 
 ---
 
+🔗 배포 링크
+todolist-project-xi-bay.vercel.app
+
+---
+
 ##  과제 요구사항 체크리스트
 
 **(상위)**  
@@ -95,11 +100,7 @@ bash
 └── constants/        # 상수 (컬러 등)
 📡 API 정보
 Swagger 문서: API Docs
-
 tenantId를 통해 개인화된 데이터 관리
-
-🔗 배포 링크
-todolist-project-xi-bay.vercel.app
 
  회고 및 정리
  - 제출 완성도
