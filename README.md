@@ -10,7 +10,7 @@ Next.js, TypeScript, Tailwind CSS를 기반으로 제작한 할 일 관리 웹 �
 🔗 배포 링크
 <p align="center">
   <a href="https://todolist-project-xi-bay.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Demo-%2300C853?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo Badge" />
+    <img src="https://img.shields.io/badge/프로젝트-%바로가기%2300C853?style=for-the-badge&logo=vercel&logoColor=white" alt="프로젝트 바로가기" />
   </a>
 </p>
 
