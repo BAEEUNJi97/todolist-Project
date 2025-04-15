@@ -67,7 +67,7 @@ npm install
 npm run dev
 # http://localhost:3000 접속
 
-📁 디렉토리 구조
+📁 디렉토리 구조 요약표
 ├── app/              # 라우팅 페이지 구조 (App Router)
 ├── components/ui/    # 공용 UI 컴포넌트
 ├── styles/           # Tailwind 확장 설정
@@ -76,29 +76,7 @@ npm run dev
 └── constants/        # 상수 (컬러 등)
 📡 API 정보
 Swagger 문서: API Docs
-📁 디렉토리 구조 요약표
-폴더명	폴더 설명
 
-폴더명	폴더 설명
-app/	Next.js App Router 기반의 라우팅 구조. page.tsx, 동적 라우팅(items/[id]/page.tsx) 포함
-app/globals.css	Tailwind 기본 스타일과 전역 스타일 정의
-components/ui/	공통 UI 컴포넌트 폴더. Button, Input, TodoItem 등 재사용 컴포넌트 위치
-components/ui/Button.tsx	variant/size props를 가진 커스텀 버튼 컴포넌트
-components/ui/Gnb.tsx	GNB(Global Navigation Bar), 상단 네비게이션 UI
-components/ui/Input.tsx	할 일 등록용 기본 입력 필드
-components/ui/Textarea.tsx	상세 페이지 메모 입력용 텍스트 필드
-components/ui/TodoItem.tsx	목록 페이지에서 사용하는 할 일 카드 컴포넌트
-components/ui/TodoItemDetail.tsx	상세 페이지에서 사용하는 카드 컴포넌트
-components/ui/ImageUploader.tsx	이미지 선택, 업로드, 미리보기 기능 포함된 컴포넌트
-components/ui/StatusBadge.tsx	상태(완료, 진행중, 미완료)를 시각적으로 보여주는 뱃지
-styles/	전역 스타일 및 색상, 그림자 등의 공용 스타일 정의 폴더
-styles/styles.ts	컬러 시스템(COLORS), 그림자 등 스타일 상수 모음
-tailwind.config.js	Tailwind CSS 커스터마이징 설정 (컬러 확장 등)
-postcss.config.js	Tailwind/PostCSS 연동 설정 파일
-utils/	날짜 포맷, 문자열 자르기 등의 유틸 함수 정의
-constants/	공통 상수(COLORS, 상태값 등) 정의
-types/	TypeScript 타입 정의 폴더 (IToDo, 컴포넌트 props 타입 등)
-public/assets/	정적 이미지 및 업로드 리소스 저장 폴더
 
 tenantId를 통한 개인화된 데이터 관리
 
