@@ -76,6 +76,28 @@ npm run dev
 └── constants/        # 상수 (컬러 등)
 📡 API 정보
 Swagger 문서: API Docs
+📁 디렉토리 구조 요약표
+폴더명	폴더 설명
+
+app/	Next.js App Router 기반의 페이지 라우팅 폴더. page.tsx 및 동적 라우팅(items/[id]/page.tsx) 포함
+app/globals.css	Tailwind 기본 스타일 및 전역 스타일 정의
+components/ui/	공통 UI 컴포넌트 폴더. Button, Input, TodoItem 등 재사용 가능한 UI 요소 구성
+components/ui/Button.tsx	variant, size props를 지원하는 커스텀 버튼 컴포넌트
+components/ui/Gnb.tsx	상단 네비게이션 바 (전체 공통 레이아웃에 포함됨)
+components/ui/Input.tsx	할 일 등록 등에 사용하는 기본 입력 필드
+components/ui/TodoItem.tsx	메인 페이지에서 보여지는 할 일 카드 컴포넌트
+components/ui/TodoItemDetail.tsx	상세 페이지에서 사용하는 카드 컴포넌트
+components/ui/ImageUploader.tsx	이미지 업로드 + 미리보기 기능 컴포넌트
+components/ui/StatusBadge.tsx	진행중, 완료, 미완료 상태를 뱃지로 보여주는 컴포넌트
+styles/	Tailwind 설정 확장, 공통 스타일 값 정의
+styles/styles.ts	커스텀 색상(COLORS), 그림자 등 UI 공용 스타일 정의
+tailwind.config.js	Tailwind 설정 파일. 커스텀 컬러, 폰트 등 확장
+postcss.config.js	Tailwind/PostCSS 연동 설정
+utils/	공통으로 쓰는 함수(날짜 포맷, 텍스트 자르기 등) 정의
+constants/	프로젝트 전체에서 사용하는 상수(COLORS, 상태값 등) 정의
+types/	IToDo 등의 타입 정의로 컴포넌트 간 props 전달 시 타입 안정성 확보
+public/assets/	이미지, 정적 파일 저장 위치
+
 
 tenantId를 통한 개인화된 데이터 관리
 
