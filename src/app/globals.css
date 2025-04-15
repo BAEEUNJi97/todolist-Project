@@ -1,0 +1,26 @@
+/* Tailwind CSS 기본 스타일 임포트 */
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+/* 전역에서 사용할 CSS 변수 정의 */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Tailwind 테마 확장용 사용자 정의 변수 (실제 사용 여부는 설정에 따라 달라짐) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* body 기본 스타일 설정 */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
