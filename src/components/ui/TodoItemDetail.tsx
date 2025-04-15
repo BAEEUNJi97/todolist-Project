@@ -15,13 +15,13 @@ interface TodoItemDetailProps {
 
 // 할 일 상세보기 컴포넌트
 export default function TodoItemDetail({ todo, onUpdate, onDelete, onToggle }: TodoItemDetailProps) {
-    // ✅ 존재하지 않으면 notFound 처리하거나 null 반환
-    if (!todo) return null;
 
-    // ✅ Hook은 조건문 바깥에서 항상 호출되어야 함
     const [memo, setMemo] = useState(todo.memo || '');
     const [isCompleted, setIsCompleted] = useState(todo.isCompleted);
     const [imageUrl, setImageUrl] = useState(todo.imageUrl || '');
+
+    //  존재하지 않으면 notFound 처리하거나 null 반환
+    if (!todo) return null;
 
     // 수정 완료 버튼 클릭 시 호출
     const handleSave = () => {
